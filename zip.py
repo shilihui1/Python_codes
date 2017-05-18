@@ -3,3 +3,6 @@ b = [3, 4]
 c = [5, 6, 7]
 print(list(zip(a, b)))
 print(list(zip(a, c)))
+d = ['a', 'b']
+print(list(zip(a, d)))
+
