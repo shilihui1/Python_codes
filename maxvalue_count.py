@@ -4,8 +4,9 @@ class Solution:
         print(a_enumerate)
 
         count = 0
+        a_max = max(a)
         for i, j in enumerate(a):
-            if j == max(a):
+            if j == a_max:
                 count += 1 
         return count
 
