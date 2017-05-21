@@ -1,4 +1,4 @@
-# find the 3rd largest element in an unsorted array
+# find the 3rd largest element in an unsorted array: http://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
 class Solution:
     def third_largest(a):
         n = len(a)
