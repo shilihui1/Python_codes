@@ -8,9 +8,8 @@ class solution:
         temp_largest = x[0]
         sum_largest = temp_largest
         for num in x[1:]:
+            #temp_largest: moving the start index, the temporary subarray sum
             temp_largest = max(num, temp_largest + num)
             sum_largest = max(sum_largest, temp_largest)
-            print(temp_largest)
-            print(sum_largest)
         return sum_largest
 print(solution.subarray_sum_largest([-1, 4, -3, 4, -5]))
