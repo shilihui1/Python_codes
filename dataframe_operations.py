@@ -5,6 +5,9 @@ print(b)
 c = pd.read_csv('/Users/lihuishi/Desktop/python codes/dict.csv', index_col = 0)
 print(c)
 
+# Print out the column of the Dataframe
+print(c.columns)
+
 # Print out country column as Pandas Series
 print(c['country'])
 print(type(c['country']))
