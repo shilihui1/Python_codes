@@ -10,3 +10,9 @@ print(type(c['country']))
 # Print out country column as Pandas DataFrame
 print(c[['country']])
 print(type(c[['country']]))
+# Print out first 3 observations
+print(c[0:3])
+# Print out observation for China: loc is label based 
+print(c.loc[['CN']])
+# Print out observations for India and China
+print(c.loc[['IN', 'CN']])
