@@ -15,6 +15,9 @@ print(repeat_list([1, 2, 3]))
 double_list = lambda x: [num*2 for num in x]
 print(double_list([1, 2, 3]))
 
+ktimes_list = lambda x, k: [num*k for num in x]
+print(ktimes_list([1, 2, 3], 5))
+
 # lambda funtion and map function
 nums = [1,2,3,4]
 res1 = map(lambda x: x*2, nums)
