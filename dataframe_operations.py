@@ -18,10 +18,10 @@ print(type(c[['country']]))
 print(c[['country', 'capital']])
 print(type(c[['country', 'capital']]))
 
-# Print out first 3 observations
+# Print out first 3 observations, [] can only do slicing for rows
 print(c[0:3])
 
 # Print out observation for China: loc is label based 
 print(c.loc[['CN']])
-# Print out observations for India and China
+# loc for specific rows
 print(c.loc[['IN', 'CN']])
