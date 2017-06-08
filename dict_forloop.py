@@ -11,3 +11,10 @@ for key in a.keys():
 # values method for dictionary
 for value in a.values():
     print(value)
+
+print("\nBEGIN: REPORT\n")
+# Iterate over the key-value pairs of kwargs
+for keys, values in a.items():
+    # Print out the keys and values, separated by a colon ':'
+    print(str(keys) + ": " + values)
+print("\nEND REPORT")
