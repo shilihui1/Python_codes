@@ -12,6 +12,13 @@ plt.show()
 
 # Histogram of life_exp1950, 15 bins
 plt.hist(life_exp1950, bins = 15)
+plt.show()
+
+#scatterplot
+plt.scatter(gdp_cap, life_exp)
+plt.scatter(gdp_cap, life_exp, s = np_pop, c = col, alpha = 0.8)
+plt.xscale('log') 
+plt.show()
 
 # Show and clear plot again
 plt.show()
