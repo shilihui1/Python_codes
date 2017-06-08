@@ -18,6 +18,14 @@ plt.show()
 plt.scatter(gdp_cap, life_exp)
 plt.scatter(gdp_cap, life_exp, s = np_pop, c = col, alpha = 0.8)
 plt.xscale('log') 
+
+# Additional customizations
+plt.text(1550, 71, 'India')
+plt.text(5700, 80, 'China')
+
+# Add grid() call
+plt.grid(True)
+
 plt.show()
 
 # Show and clear plot again
