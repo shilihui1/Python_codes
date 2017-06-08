@@ -18,6 +18,6 @@ for key, value in a.items():
     print(value)
 
 #iterate over rows
-for row, label in a.iterrows():
-    print(row)
+for label, row in a.iterrows():
     print(label)
+    print(row)
