@@ -5,8 +5,8 @@ class Solution:
 
         count = 0
         a_max = max(a)
-        for i, j in enumerate(a):
-            if j == a_max:
+        for key, value in enumerate(a):
+            if value == a_max:
                 count += 1 
         return count
 
