@@ -1,8 +1,5 @@
 class Solution:
     def maxvalue_count(a):
-        a_enumerate = list(enumerate(a))
-        print(a_enumerate)
-
         count = 0
         a_max = max(a)
         for key, value in enumerate(a):
