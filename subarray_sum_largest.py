@@ -9,7 +9,5 @@ class solution:
                 a = sum(x[j:j + i - 1])
                 if a > temp_largest:
                     temp_largest = a
-                else:
-                    pass
         return temp_largest
 print(solution.subarray_sum_largest([-1, 4, -3, 4, -5]))
