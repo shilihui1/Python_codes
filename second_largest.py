@@ -2,7 +2,7 @@ class solution:
     def second_largest(a):
         a_sorted = sorted(a)
         max_value = max(a)
-        for index, value in enumerate(a):
+        for key, value in enumerate(a):
             if value == max_value:
                 a_sorted.pop()
         return max(a_sorted)
