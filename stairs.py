@@ -23,8 +23,8 @@ Sample Output
 '''
 
 def  StairCase(n):
-    for i in range(1, n+1):
-        printer =' '*(n-i+1) + '#'*i
+    for i in range(1, n + 1):
+        printer = ' '*(n - i + 1) + '#'*i
         print(printer, '\n')
 
 StairCase(6)
