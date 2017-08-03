@@ -1,5 +1,5 @@
 # find out how many numbers are duplicated in a given array
-input_vec = [1, 2, 1, 3, 3, 2, 0, 0, 0, 2]
+input_vec = [1, 2, 3, 3, 2, 0, 0, 2]
 
 def dup_count_1(a):
     n = len(a)
@@ -8,11 +8,13 @@ def dup_count_1(a):
     dup = []
     value = a[0]
     for i in range(n):
-        if a[i] in dup and value not in a[i+1:]:
+        #print(a[i])
+        if a[i] in a[i+1:] and a[i] not in dup:
+            #print('it is duplicated')
             dup_num += 1
             value = a[i]
-        dup.append(a[i])
-    
+            dup.append(a[i])
+        #print(dup)
     return(dup_num)
 
 
@@ -32,3 +34,4 @@ def dup_count_2(a):
             value = a[i]
     return(dup_num)
 print(dup_count_2(input_vec))
+
