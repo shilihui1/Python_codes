@@ -41,7 +41,7 @@ class solution:
         # index can be an element or a list
         if len(index) == 1:
             return names[index]
-        else: # slicing
+        else: # multiple elements which have the second smallest numbers
             return [value for key, value in enumerate(names) if key in index]
 print(solution.second_smallest([['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]))
 
