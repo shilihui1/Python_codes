@@ -10,8 +10,8 @@ def isprime(n):
             print(n, "is not a prime number")
             return False
     else:
-            print(n, "is a prime number")
-            return True
+        print(n, "is a prime number")
+        return True
         
 for i in range(1, 24):
     print(isprime(i))
