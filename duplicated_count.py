@@ -16,8 +16,6 @@ def dup_count_1(a):
             dup.append(a[i])
         #print(dup)
     return(dup_num)
-
-
 print(dup_count_1(input_vec))    
 
 
