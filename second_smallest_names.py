@@ -1,3 +1,19 @@
+# list comprehension method
+class solution:
+    def second_smallest(score_list):
+        scores = [a[1] for a in score_list]
+        names = [a[0] for a in score_list]
+        M = min(scores)
+        second_smallest_score = min(score for score in scores if score != M)
+        index = [key for key, value in enumerate(scores) if value == second_smallest_score]
+        # index can be an element or a list
+        if len(index) == 1:
+            return names[index]
+        else: # multiple elements which have the second smallest numbers
+            return [value for key, value in enumerate(names) if key in index]
+print(solution.second_smallest([['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]))
+
+# brute force method
 class solution:
     def second_smallest(score_list):
         name = list()
@@ -28,20 +44,5 @@ class solution:
         name_result = sorted(name_result)
         #print('\n'.join(name_result))
         return name_result 
-print(solution.second_smallest([['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]))
-
-# list comprehension method
-class solution:
-    def second_smallest(score_list):
-        scores = [a[1] for a in score_list]
-        names = [a[0] for a in score_list]
-        M = min(scores)
-        second_smallest_score = min(score for score in scores if score != M)
-        index = [key for key, value in enumerate(scores) if value == second_smallest_score]
-        # index can be an element or a list
-        if len(index) == 1:
-            return names[index]
-        else: # multiple elements which have the second smallest numbers
-            return [value for key, value in enumerate(names) if key in index]
 print(solution.second_smallest([['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]))
 
