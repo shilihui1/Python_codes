@@ -4,7 +4,7 @@ def isprime(n):
         print("1 is a special number")
         return False
     for x in range(2, n):
-        if n%x == 0:
+        if n % x == 0:
             print(n, "is not a prime number")
             return False
     else:
@@ -19,7 +19,7 @@ def isprime(n):
         print("1 is a special number")
         return False
     for x in range(2, math.ceil(n/2) + 1):
-        if n%x == 0:
+        if n % x == 0:
             print(n, "is not a prime number")
             return False
     else:
